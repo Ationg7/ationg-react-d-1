@@ -53,13 +53,12 @@ function NavigationBar() {
                                     <li><hr className="dropdown-divider" /></li>
                                     <li><a className="dropdown-item" href="#">Exercise</a></li>
                                     <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="#">Seek Advice</a></li>
+                                    <li><a className="dropdown-item" href="#">Self-care Tips</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
+                        <button className="btn btn-outline-success" type="submit">Logout</button>
                         </form>
                     </div>
                 </div>

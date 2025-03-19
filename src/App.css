@@ -413,3 +413,551 @@
     font-size: 2.5rem; /* Adjust text size for mobile */
   }
 }
+
+.profile-pic {
+  width: 40px; /* Adjust as needed */
+  height: 40px;
+  background-color: #6c757d; /* Neutral gray background */
+  color: #fff; /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Makes it circular */
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Center the content */
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 250px); /* Make sure the content takes full viewport height */
+  padding: 30px; /* Increased padding */
+}
+
+/* Make the h1 big and bold */
+.placeholder-content h1 {
+  font-size: 4rem; /* Even bigger size for the title */
+  font-weight: bold;
+  margin-bottom: 25px; /* Increased space below the title */
+}
+
+/* Optional: Make sure the image is responsive */
+.placeholder-content img {
+  width: 200px; /* Increased logo size */
+  height: auto;
+  margin-bottom: 25px;
+}
+
+/* Optional: Adjust the paragraph styling */
+.placeholder-content p {
+  font-size: 1.2rem; /* Larger paragraph font */
+  max-width: 900px; /* Increased max width */
+  margin: 0 auto;
+}
+
+/* Responsive Cards */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .jumbotron {
+    padding: 3rem 1rem; /* Adjusted padding for mobile */
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .placeholder-content {
+    height: auto; /* Adjust height for smaller content */
+    padding: 15px; /* Adjusted padding */
+  }
+
+  /* Ensure search form is properly aligned in mobile view */
+  .navbar form {
+    margin-top: 15px; /* Adjusted margin */
+  }
+}
+/* ===== HERO SECTION ===== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #2c3e50, #3ca04b);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left text section */
+.hero h1 {
+  font-size: 4.5rem;
+  line-height: 1.2;
+}
+
+/* Join now button */
+.hero .btn-outline-success {
+  font-size: 22px;
+  padding: 14px 35px;
+  border-radius: 30px;
+}
+
+/* ===== CIRCLE BACKGROUND & BROKEN BORDER ===== */
+.circle-container {
+  position: absolute;
+  top: 600px;
+  left: 860px;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Outer Dashed Circle (Broken Border) */
+.circle-border {
+  width: 1150px;  /* Larger than background circle */
+  height: 1150px;
+  border-radius: 50%;
+  border: 10px dashed rgba(255, 255, 255, 0.5); /* Dashed broken border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 280px;
+  top: 5px;
+}
+
+/* Space Between Dashed Border & Background */
+.circle-spacing {
+  width: 1150px; /* Slightly smaller than .circle-border */
+  height: 1150px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  
+}
+
+/* Inner Background Circle */
+.circle-bg {
+  width: 1100px;
+  height: 1100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  left: 307px;
+  top: 30px;
+}
+
+/* 🚀 HERO IMAGE - A LOT BIGGER BUT BALANCED */
+.hero-img {
+  width: 2500px;
+  max-width: 1609px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  top: 200px;
+  right: 60px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .hero h1 {
+      font-size: 4rem;
+  }
+
+  .hero-img {
+      width: 95%;
+      max-width: 650px;
+      margin-right: 10%;
+  }
+
+  .circle-border {
+      width: 450px;
+      height: 450px;
+      border-width: 6px;
+  }
+
+  .circle-spacing {
+      width: 430px;
+      height: 430px;
+  }
+
+  .circle-bg {
+      width: 400px;
+      height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+      text-align: center;
+      flex-direction: column;
+      padding: 40px 20px;
+  }
+
+  .hero h1 {
+      font-size: 3.5rem;
+  }
+
+  .hero-img {
+      width: 100%;
+      max-width: 600px;
+      margin-right: 20%;
+  }
+
+  .circle-border {
+      width: 380px;
+      height: 380px;
+      border-width: 5px;
+  }
+
+  .circle-spacing {
+      width: 360px;
+      height: 360px;
+  }
+
+  .circle-bg {
+      width: 350px;
+      height: 350px;
+  }
+}
+/* ===== LEFT TEXT SECTION ===== */
+.Caption {
+  font-size: 3.5rem; /* Large text for impact */
+  font-weight: bold;
+  line-height: 1.2;
+  color: black; /* Ensuring contrast with the white background */
+  text-align: left;
+  right: 100px; /* Only 5px margin to the left */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .Caption {
+    font-size: 3rem; /* Slightly smaller for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .Caption {
+    font-size: 2.5rem; /* Adjust text size for mobile */
+  }
+}
+
+/* Main Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  background: none;
+  
+}
+
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+
+/* Login Form Wrapper */
+.Login-form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Push content to the left */
+  padding-left: 5%;
+  margin-top: 30px;
+  background-color: transparent;
+  margin-bottom: 5px;
+  
+}
+
+/* Login Card */
+.login-card {
+  width: 400px; /* Adjust width as needed */
+  background-color: #F0E8E8;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Logo */
+.logo-container {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin-bottom: 20px;
+  width: 100%; /* Ensures it takes full width */
+}
+
+.form-logo {
+  width: 100px;
+  height: auto; /* Ensures it keeps aspect ratio */
+
+}
+
+
+/* Headings */
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/* Password Input */
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+   margin-top: 7px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  
+
+}
+
+/* Forgot Password */
+.forgot-password {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  color: #480606;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Sign-in Button */
+.sign-in-btn {
+  width: 100%;
+  padding: 10px;
+  background-color:  #267347;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.sign-in-btn:hover {
+  background-color: #2e6d2e;
+}
+
+/* Signup Link */
+.signup-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.signup-link {
+  color: #259122;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Login-form {
+      justify-content: center;
+      padding: 0;
+  }
+
+  .login-card {
+      width: 90%;
+  }
+}
+/*   
+Sign UP Design */
+
+/* Center the form */
+/* Ensure the container is positioned to the left */
+.signup-container {
+  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Push content to the left */
+  padding-left: 5%;
+  margin-top: 30px;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+
+/* Signup card styling */
+.signup-card {
+  width: 380px;
+  background:  #F0E8E8;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.Signup-text {
+  font-size: 16px;  
+  font-weight: bold;  
+  color: #393030;  
+  margin: 0;  /* Remove extra margin */
+  margin-right: 200px;
+}
+
+
+
+
+/* Logo */
+.logo-containers {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.small-logo {
+  width: 10px;
+  height: auto;
+}
+
+/* Title */
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Form fields */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input styling */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background: #e8e8e8;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Input with icon wrapper */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Register button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #2e8b57;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.register-btn:hover {
+  background: #267347;
+}
+
+/* Sign-in link */
+.signin-text {
+  margin-top: 15px;
+}
+
+.signin-link {
+  color: #2e8b57;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}
